@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <form id="stdForm">
+                    <div class="form-group">
+                        <label for="fname">First Name</label>
+                        <input type="text" required id="fname" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fname">Last Name</label>
+                        <input type="text" id="lname" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fname">Email</label>
+                        <input type="text" id="email" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fname">contact</label>
+                        <input type="text" id="contact" class="form-control">
+                    </div>
+
+                    <button type="submit" id="submitStdBtn" class="btn btn-sm btn-block btn-outline-info">Add student</button>
+                    <button type="submit" id="updateStdBtn" class="btn btn-sm btn-block btn-outline-info d-none">Update student</button>
+
+
+                </form>
+            </div>
+            <div class="col-lg-8">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Sr No</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email</th>
+                                <th>Contact</th>
+                                <th>Edit</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody id="stdContainer">
+                            <!-- <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-info">Edit</button>
+                                </td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-danger">Remove</button>
+                                </td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assest/js/app.js"></script>
+</body>
+</html>
